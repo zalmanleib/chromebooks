@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Chromebook Home Page</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap">
+<style>
+    body {
+        font-family: 'Google Sans', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+    }
+    .google-logo {
+        font-size: 64px;
+        font-weight: 700;
+        color: #4285F4;
+        margin-bottom: 20px;
+    }
+    .search-bar {
+        width: 50%;
+        max-width: 600px;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .search-bar input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #f5f5f5;
+        border-radius: 4px;
+    }
+    .most-used {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .most-used a {
+        text-decoration: none;
+        color: #000;
+        text-align: center;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+    }
+    .most-used a:hover {
+        transform: scale(1.05);
+    }
+    .most-used img {
+        width: 100px;
+        height: 100px;
+        background-color: #C0C0C0;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .most-used div {
+        width: 120px;
+    }
+    .most-used p {
+        font-family: 'Google Sans', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="google-logo">Chromebook</div>
+    <div class="search-bar">
+    <input list="suggestions" type="text" placeholder="Search...">
+    <datalist id="suggestions">
+        <option value="Google Classroom">
+        <option value="Google Drive">
+        <option value="Google Docs">
+        <option value="Google Slides">
+        <option value="Google Sheets">
+    </datalist>
+</div>
+<div class="most-used">
+    <a href="https://videos.jem.tv/home">
+        <div>
+            <img src="https://videos.jem.tv/assets/logo/jem_tv_logo_multi_color_dark.svg" alt="JEM TV">
+            <p>jem.tv</p>
+        </div>
+    </a>
+    <a href="https://photos.jemedia.org/">
+        <div>
+            <img src="https://photos.jemedia.org/assets/icon/white-logo.svg" alt="Jem Photos">
+            <p>Jem Photos</p>
+        </div>
+    </a>
+    <a href="https://docs.google.com/document/">
+        <div>
+            <img src="https://www.gstatic.com/images/branding/product/1x/docs_2020q4_48dp.png" alt="Google Docs">
+            <p>Google Docs</p>
+        </div>
+    </a>
+</div>
+</body>
+</html>
