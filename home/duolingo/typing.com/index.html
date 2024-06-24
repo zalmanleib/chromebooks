@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Tab</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="icon" href="https://cdn.icon-icons.com/icons2/1381/PNG/512/googlechrome_93595.png" type="image/png">
+
+<style>
+    body {
+        font-family: 'Google Sans', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; /* Adjust height as needed */
+        background-size: cover; /* Ensure the image covers the entire background */
+        background-position: center; /* Center the background image */
+        position: relative; /* Ensure the body is relative for absolute positioning */
+    }
+    .google-logo {
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: flex;
+        color: #fff;
+    }
+    /* Other styles */
+    .search-bar {
+        width: 50%;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+    }
+    .search-bar input {
+        width: 100%;
+        font-size: 16px;
+        border: none;
+        border-radius: 50px;
+        padding-left: 40px; /* Add space for the icon */
+        padding-right: 40px; /* Add space for the microphone icon */
+    }
+    .search-bar input:focus {
+        outline: none;
+    }
+    .search-icon {
+        position: absolute;
+        left: 20px; /* Adjust as needed */
+        font-size: 18px;
+        color: #888;
+    }
+    .mic-icon {
+        position: absolute;
+        right: 20px; /* Adjust as needed */
+        font-size: 18px;
+        color: #888;
+    }
+    .most-used {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 20px; /* Adjust spacing from search bar */
+    }
+    .most-used a {
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.2s;
+    }
+    .most-used a:hover {
+        transform: scale(1.05);
+    }
+    .most-used .icon-wrapper {
+        width: 30px; /* Adjust size of circular button */
+        height: 30px; /* Adjust size of circular button */
+        background-color: #dcdcdc;
+        padding: 13px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .most-used img {
+        width: 30px; /* Adjust size of logo */
+        height: 30px; /* Adjust size of logo */
+        border-radius: 50%;
+        object-fit: contain;
+    }
+    .most-used .button-text {
+        font-family: 'Google Sans', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 200;
+        margin-top: 10px; /* Adjust spacing between logo and text */
+        max-width: 100%; /* Ensure text doesn't overflow */
+        text-align: center; /* Center text */
+    }
+    /* Pencil icon */
+    .pencil-icon {
+        position: absolute;
+        bottom: 25px; /* Adjust distance from bottom */
+        right: 25px; /* Adjust distance from right */
+        color: #888;
+        font-size: 16px;
+    }
+    /* Profile picture */
+    .profile-pic {
+        position: absolute;
+        top: 20px; /* Adjust distance from top */
+        right: 23px; /* Adjust distance from right */
+        width: 30px; /* Adjust size of profile picture */
+        height: 30px; /* Adjust size of profile picture */
+        border-radius: 50%;
+        overflow: hidden; /* Ensure the image stays within the circle */
+    }
+    .profile-pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .material-symbols-outlined {
+        position: absolute;
+        top: 22px; /* Adjust distance from top */
+        right: 70px; /* Adjust distance from right */
+        font-family: 'Material Symbols Outlined', sans-serif; /* Ensure correct font family */
+        font-size: 25px; /* Adjust size as needed */
+        color: #000; /* Adjust color as needed */
+    }
+</style>
+</head>
+<body>
+    <div class="google-logo">
+        <span>Chromebooks</span>
+
+    </div>
+    <div class="search-bar">
+        <i class="fas fa-search search-icon"></i>
+        <input list="suggestions" type="text" placeholder="Search Google or type a URL">
+        <i class="fas fa-microphone mic-icon"></i>
+        <datalist id="suggestions">
+            <option value="why is this searchbar not working?">
+            <option value="because it's fake">
+            <!--<option value="Google Sheets">-->
+        </datalist>
+    </div>
+    <div class="most-used">
+        <a href="https://videos.jem.tv/home">
+            <div class="icon-wrapper">
+                <img src="https://videos.jem.tv/assets/icons/android-chrome-192x192.png" alt="JEM TV">
+            </div>
+            <div class="button-text">jem.tv</div>
+        </a>
+        <a href="https://photos.jemedia.org/">
+            <div class="icon-wrapper">
+                <img src="https://photos.jemedia.org/assets/icon/favicon.ico" alt="Jem Photos">
+            </div>
+            <div class="button-text">Jem Photos</div>
+        </a>
+        <a href="https://ashreinu.app/">
+            <div class="icon-wrapper">
+                <img src="https://ashreinu.app/assets/icon/icon-512x512.png" alt="Ashreinu">
+            </div>
+            <div class="button-text">Ashreinu</div>
+        </a>
+        <a href="https://docs.google.com/document/">
+            <div class="icon-wrapper">
+                <img src="https://www.gstatic.com/images/branding/product/1x/docs_2020q4_48dp.png" alt="Google Docs">
+            </div>
+            <div class="button-text">Google Docs</div>
+        </a>
+        <a href="https://www.duolingo.com/">
+            <div class="icon-wrapper">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_mnLQQnumtLmQgMDXZ_EwVIp3L0tbhyto08Pib7Y6laMx0=s900-c-k-c0x00ffffff-no-rj" alt="Duolingo">
+            </div>
+            <div class="button-text">duolingo</div>
+        </a>
+        <a href="https://www.typing.com/student/">
+            <div class="icon-wrapper">
+                <img src="https://uptime.com/media/website_profiles/typing.com.png" alt="Typing.com">
+            </div>
+            <div class="button-text">typing.com</div>
+        </a>
+        <a href="https://zalmanleib.github.io/404">
+            <div class="icon-wrapper">
+                <img src="https://cdn.icon-icons.com/icons2/834/PNG/512/plus_icon-icons.com_66718.png" alt="Add shortcut">
+            </div>
+            <div class="button-text">Add shortcut</div>
+        </a>
+    </div>
+    <!-- Pencil icon -->
+    <i class="fas fa-pencil-alt pencil-icon"></i>
+    <!-- Profile picture -->
+    <div class="profile-pic">
+        <img src="https://w2.chabad.org/media/images/1180/eSYw11806416.png" alt="Profile Picture">
+    </div>
+    <div>
+        <span class="material-symbols-outlined">apps</span>
+    </div>
+
+    <script>
+        const images = [
+            'https://images.squarespace-cdn.com/content/5a0a0ee2e9bfdf638b5c9b82/1677268493595-OUYPWU38AQGTMRLJR503/770+Crown+Heights.jpg?format=1500w&content-type=image%2Fjpeg',
+            'https://live.staticflickr.com/16/21261658_29b91f93cb_b.jpg',
+        ];
+
+        document.body.style.backgroundImage = `url(${images[Math.floor(Math.random() * images.length)]})`;
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+    </script>
+
+</body>
+</html>
